@@ -1,0 +1,30 @@
+{
+  "name": "alexa-bot-api",
+  "version": "0.1.8",
+  "description": "A very lightweight and simple artificial intelligence with multi language support",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "md5": "^2.3.0",
+    "superagent": "^6.1.0",
+    "translation-google": "^0.2.1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "alexa",
+    "artificial-iintelligencee",
+    "ai",
+    "bot"
+  ],
+  "author": {
+    "name": "nithishpravin"
+  },
+  "engines": {
+    "node": ">=0.12"
+  },
+  "files": [
+    "src"
+  ]
+}
