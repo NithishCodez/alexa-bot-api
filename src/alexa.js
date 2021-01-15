@@ -7,10 +7,10 @@ class Alexa {
   }
   
   async getReply(message, language) {
-    if(message === '' || null) {
+    if(!message) {
       throw new TypeError('Message Cannot be empty in getReply()')
     }
-    if(language === '' || null) {
+    if(!language) {
       throw new TypeError('Language Cannot be empty')
     }
     try{
