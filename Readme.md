@@ -9,9 +9,14 @@ https://www.buymeacoffee.com/nithishpravin
 **Discord Server**:
 https://discord.gg/F2vrYyvF7v
 
+### Credits
+
 **Developers**:
 [Nithish Pravin](https://github.com/Major-Thrust)
 Discord: Nithish#6593
+
+**API**
+Uses the [cleverbot](https://www.cleverbot.com/) api
 
 **Whats new in v0.1.8**
 - Minor bug fixes
