@@ -15,7 +15,7 @@ https://discord.gg/F2vrYyvF7v
 [Nithish Pravin](https://github.com/Major-Thrust)
 Discord: Nithish#6593
 
-**API**
+**API**:
 Uses the [cleverbot](https://www.cleverbot.com/) api
 
 **Whats new in v0.1.8**
