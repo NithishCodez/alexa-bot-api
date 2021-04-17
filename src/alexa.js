@@ -1,26 +1,23 @@
-const artificialIntelligence = require('./ai.js');
-var translate = require('translation-google');
-
 class Alexa {
-
   constructor() {
-  }
-  
-  async getReply(message, language) {
-    if(!message) {
-      throw new TypeError('Message Cannot be empty in getReply()')
-    }
-    if(!language) {
-      throw new TypeError('Language Cannot be empty')
-    }
-    try{
-    const trans = await translate(await artificialIntelligence(message), {to: language})
-    return trans.text
-    }catch(err){
-      console.error(err)
-    }
+    /**
+     * @type {require("./ai.js")}
+     */
+
+    this.ai = require("./ai.js");
   }
 
+  async getReply(message, language) {
+    if (language) {
+      if (typeof language !== "string")
+        throw new Error("[Alexa-Bot-Api: Error] Langauge must be a string");
+    }
+    if (typeof message !== "string")
+      throw new Error("[Alexa-Bot-API: ERROR] Query paramter must be a string");
+    if (message == null)
+      throw new Error("[Alexa-Bot-API: ERROR] Query parameter must be passed");
+    return await this.ai(message, language);
+  }
 }
 
 module.exports = Alexa;
