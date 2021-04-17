@@ -25,7 +25,7 @@ Involvement: Helped in the latest fix and suggestions about the package
 ## Promise Based!
 
 ```js
-const alexa = require("./index.js");
+const alexa = require("alexa-bot-api");
 const ai = new alexa();
 
 ai.getReply("Hello", "spanish").then((reply) => {
@@ -43,7 +43,7 @@ getReply(<message>, <language>)
 ## Async / Await
 
 ```js
-const alexa = require("./alexa.js");
+const alexa = require("alexa-bot-api");
 const ai = new alexa();
 
 async function main() {
