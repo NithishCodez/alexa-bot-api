@@ -1,4 +1,4 @@
 const alex = require("./alexa.js");
 const ai = new alex();
 
-ai.getReply("hey").then(console.log);
+ai.getReply("hey", "spanish").then(console.log);

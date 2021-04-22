@@ -1,14 +1,13 @@
 {
   "name": "alexa-bot-api",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A very lightweight and simple artificial intelligence with multi language support",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "md5": "^2.3.0"
+    "node-fetch": "^2.6.1"
   },
   "license": "MIT",
   "keywords": [
@@ -22,7 +21,8 @@
     "url": "https://github.com/Major-Thrust/alexa-bot-api"
   },
   "author": {
-    "name": "nithishpravin"
+    "name": "nithishpravin",
+    "age": "16"
   },
   "engines": {
     "node": ">=0.12"
