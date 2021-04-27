@@ -4,4 +4,5 @@ module.exports = async (e, t) => {
     encodeURI(`https://alexa-bot-api-web-server.vercel.app/api/alexa?stimulus=${e}?lang=${t}`)
   )
     .then((e) => e.json().then(e => e.reply))
+    .catch(err => { throw new Error(err) });
 };
