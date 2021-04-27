@@ -17,10 +17,12 @@ Discord: Nithish#6593
 Discord: Pudochu 'D#0001
 Involvement: Helped in the latest fix and suggestions about the package
 
-**Whats new in v2.0.0**
+BlobKat#0388: Updated to support contextual AI
+
+**Whats new in v2.1.0**
 
 - Fixed cleverbot's new API update that lead to package not working
-- Fixed Bugs
+- Added Context support
 
 ## Promise Based!
 
@@ -28,16 +30,19 @@ Involvement: Helped in the latest fix and suggestions about the package
 const alexa = require("alexa-bot-api");
 const ai = new alexa();
 
-ai.getReply("Hello", "spanish").then((reply) => {
+ai.getReply("Hello").then((reply) => {
   console.log(reply);
   //Do your stuffs with the reply
 });
 ```
 
-## Specific Language:
+## Contextual AI:
 
-```
-getReply(<message>, <language>)
+```js
+getReply(<message>, <context>)
+//context: string | array
+//string: a specific channel ID for context
+//array: an array of previous messages
 ```
 
 ## Async / Await
@@ -47,7 +52,7 @@ const alexa = require("alexa-bot-api");
 const ai = new alexa();
 
 async function main() {
-  const reply = await ai.getReply("How are you mate?", "tamil");
+  const reply = await ai.getReply("How are you mate?");
 
   console.log(reply);
   //Do your stuffs with reply
