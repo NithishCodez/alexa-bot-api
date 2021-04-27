@@ -1,7 +1,7 @@
 /* Code originated from Nithish#6593 */
 /* Adapted and modified by BlobKat#0388 */
 /* All rights reserved */
-const md5 = require("md5"), axios = require("axios"), jar = null, contexts = {};
+let md5 = require("md5"), axios = require("axios"), jar = null, contexts = {};
 module.exports = async function(stim, id){
   let context = id;
   if(!Array.isArray(id)){
